@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索 - 音乐播放器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="image/youtube-music-icon.svg" alt="YouTube Music">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="explore.html">
+                            <i class="fas fa-compass"></i>
+                            <span>探索</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="library.html">
+                            <i class="fas fa-music"></i>
+                            <span>媒体库</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="upgrade.html">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>升级</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <button class="new-playlist-btn">
+                    <i class="fas fa-plus"></i> 新建播放列表
+                </button>
+                <div class="recent-plays">
+                    <h3>最近播放</h3>
+                    <ul>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放1</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放2</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 顶部搜索栏 -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="搜索歌曲、专辑、音乐人、播客">
+                </div>
+            </header>
+
+            <!-- 标签页导航 -->
+            <nav class="explore-tabs">
+                <ul>
+                    <li><a href="#new">新发行</a></li>
+                    <li><a href="#rankings">排行榜</a></li>
+                    <li class="active"><a href="#moods">心情与流派</a></li>
+                </ul>
+            </nav>
+
+            <!-- 新专辑与单曲部分 -->
+            <section class="new-releases">
+                <div class="section-header">
+                    <h2>新专辑与单曲</h2>
+                    <div class="carousel-controls">
+                        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="albums-carousel">
+                    <div class="album-card">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&q=80" alt="专辑封面">
+                        <h3>新专辑标题1</h3>
+                        <p>艺术家名称1</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300&q=80" alt="专辑封面">
+                        <h3>新专辑标题2</h3>
+                        <p>艺术家名称2</p>
+                    </div>
+                    <div class="album-card">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&q=80" alt="专辑封面">
+                        <h3>新专辑标题3</h3>
+                        <p>艺术家名称3</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 心情与流派部分 -->
+            <section class="moods-genres">
+                <h2>心情与流派</h2>
+                <div class="mood-grid">
+                    <button class="mood-btn" data-mood="happy">
+                        <i class="fas fa-smile"></i>
+                        开心
+                    </button>
+                    <button class="mood-btn" data-mood="sad">
+                        <i class="fas fa-sad-tear"></i>
+                        悲伤
+                    </button>
+                    <button class="mood-btn" data-mood="relax">
+                        <i class="fas fa-couch"></i>
+                        放松
+                    </button>
+                    <button class="mood-btn" data-mood="energetic">
+                        <i class="fas fa-bolt"></i>
+                        活力
+                    </button>
+                    <button class="mood-btn" data-mood="focus">
+                        <i class="fas fa-brain"></i>
+                        专注
+                    </button>
+                    <button class="mood-btn" data-mood="romantic">
+                        <i class="fas fa-heart"></i>
+                        浪漫
+                    </button>
+                    <button class="mood-btn" data-mood="party">
+                        <i class="fas fa-music"></i>
+                        派对
+                    </button>
+                    <button class="mood-btn" data-mood="sleep">
+                        <i class="fas fa-moon"></i>
+                        睡眠
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="explore.js"></script>
+</body>
+</html> 

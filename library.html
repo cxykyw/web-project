@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体库 - 音乐播放器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="image/youtube-music-icon.svg" alt="YouTube Music">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="explore.html">
+                            <i class="fas fa-compass"></i>
+                            <span>探索</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="library.html">
+                            <i class="fas fa-music"></i>
+                            <span>媒体库</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="upgrade.html">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>升级</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <button class="new-playlist-btn">
+                    <i class="fas fa-plus"></i> 新建播放列表
+                </button>
+                <div class="recent-plays">
+                    <h3>最近播放</h3>
+                    <ul>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放1</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放2</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 顶部��� -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="搜索音乐、艺人或专辑">
+                </div>
+                <div class="library-actions">
+                    <div class="filter-dropdown">
+                        <button class="dropdown-btn">
+                            近期活动 <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" data-filter="recent">最近添加</a>
+                            <a href="#" data-filter="most-played">最常播放</a>
+                            <a href="#" data-filter="alphabetical">按字母排序</a>
+                        </div>
+                    </div>
+                    <button class="action-btn" title="刷新">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button class="action-btn" title="设置">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- 媒体库导航 -->
+            <nav class="library-tabs">
+                <ul>
+                    <li class="active"><a href="#playlists">播放列表</a></li>
+                    <li><a href="#songs">歌曲</a></li>
+                    <li><a href="#albums">专辑</a></li>
+                    <li><a href="#artists">音乐人</a></li>
+                    <li><a href="#podcasts">播客</a></li>
+                </ul>
+            </nav>
+
+            <!-- 媒体内容网格 -->
+            <section class="media-grid">
+                <div class="media-card folder">
+                    <i class="fas fa-bookmark"></i>
+                    <h3>稍后听</h3>
+                    <p>20 首歌曲</p>
+                </div>
+                <div class="media-card folder">
+                    <i class="fas fa-heart"></i>
+                    <h3>我喜欢的音乐</h3>
+                    <p>128 首歌曲</p>
+                </div>
+                <div class="media-card folder">
+                    <i class="fas fa-clock"></i>
+                    <h3>最近播放</h3>
+                    <p>50 首歌曲</p>
+                </div>
+                <div class="media-card folder">
+                    <i class="fas fa-download"></i>
+                    <h3>下载的音乐</h3>
+                    <p>36 首歌曲</p>
+                </div>
+                <div class="media-card playlist">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&q=80" alt="播放列表封面">
+                    <h3>我的2023年度歌单</h3>
+                    <p>创建于 2023-12-31</p>
+                </div>
+                <div class="media-card playlist">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300&q=80" alt="播放列表封面">
+                    <h3>工作时听的歌</h3>
+                    <p>更新于 2024-01-15</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html> 

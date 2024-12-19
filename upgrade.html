@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升级 - 音乐播放器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="upgrade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="image/youtube-music-icon.svg" alt="YouTube Music">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="explore.html">
+                            <i class="fas fa-compass"></i>
+                            <span>探索</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="library.html">
+                            <i class="fas fa-music"></i>
+                            <span>媒体库</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="upgrade.html">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>升级</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <button class="new-playlist-btn">
+                    <i class="fas fa-plus"></i> 新建播放列表
+                </button>
+                <div class="recent-plays">
+                    <h3>最近播放</h3>
+                    <ul>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放1</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放2</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content upgrade-content">
+            <div class="upgrade-container">
+                <!-- 顶部Logo -->
+                <div class="upgrade-logo">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Music Logo">
+                </div>
+
+                <!-- 主要内容 -->
+                <div class="upgrade-info">
+                    <h1>订阅 Music Premium</h1>
+                    <p class="main-description">畅享无广告打扰、支持离线播放的音乐体验，即使屏幕关闭也能享不停</p>
+                    
+                    <div class="price-info">
+                        <span class="price">¥1,080</span>
+                        <span class="period">/月・随时可以取消</span>
+                    </div>
+
+                    <button class="upgrade-btn">
+                        订阅 Music Premium
+                        <span class="terms">定期联结算。需遵守相关限制。</span>
+                    </button>
+
+                    <div class="alternative-plans">
+                        <p>也可选择包年方案、家庭方案或学生方案，轻松省更多</p>
+                        <div class="plan-buttons">
+                            <button class="plan-btn">包年方案</button>
+                            <button class="plan-btn">家庭方案</button>
+                            <button class="plan-btn">学生方案</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 底部内容 -->
+                <div class="bottom-content">
+                    <h2>过亿歌曲、视频、现场表演及更多精彩内容触手可及</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-ban"></i>
+                            <h3>无广告打扰</h3>
+                            <p>畅享无广告音乐体验</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-download"></i>
+                            <h3>离线播放</h3>
+                            <p>下载音乐随时收听</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>后台播放</h3>
+                            <p>锁屏也能继续播放</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-headphones"></i>
+                            <h3>高品质音频</h3>
+                            <p>享受极致音质体验</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="upgrade.js"></script>
+</body>
+</html> 

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 添加字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 在 head 部分添加一些默认样式 -->
+    <style>
+        .default-avatar {
+            background: linear-gradient(45deg, #1db954, #1ed760);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="image/youtube-music-icon.svg" alt="YouTube Music">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="explore.html">
+                            <i class="fas fa-compass"></i>
+                            <span>探索</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="library.html">
+                            <i class="fas fa-music"></i>
+                            <span>媒体库</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="upgrade.html">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>升级</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <button class="new-playlist-btn">
+                    <i class="fas fa-plus"></i> 新建播放列表
+                </button>
+                <div class="recent-plays">
+                    <h3>最近播放</h3>
+                    <ul>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放1</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放2</a></li>
+                        <li><i class="fas fa-history"></i><a href="#">最近播放3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 顶部栏 -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="搜索音乐、艺人或专辑">
+                </div>
+                <div class="user-profile">
+                    <span>玉伟：欢迎你</span>
+                    <div class="profile-pic default-avatar">
+                        YW
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner 区域 -->
+            <section class="hero-banner">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h1>发现音乐的无限可能</h1>
+                        <p>数百万歌曲，播放列表和播客。立即开始您的音乐之旅。</p>
+                        <div class="banner-buttons">
+                            <button class="btn-primary">
+                                <i class="fas fa-play"></i> 立即播放
+                            </button>
+                            <button class="btn-secondary">
+                                <i class="fas fa-info-circle"></i> 了解更多
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=500&q=80" alt="音乐视觉">
+                        <div class="floating-note">
+                            <i class="fas fa-music"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 推荐歌曲区域 -->
+            <section class="recommended-songs">
+                <h2>为你推荐</h2>
+                <div class="song-list">
+                    <div class="song-card">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&q=80" alt="歌曲封面">
+                        <div class="song-info">
+                            <h3>晴天</h3>
+                            <p>周杰伦</p>
+                            <span class="plays">播放量：1.2万</span>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300&q=80" alt="歌曲封面">
+                        <div class="song-info">
+                            <h3>起风了</h3>
+                            <p>买辣椒也用券</p>
+                            <span class="plays">播放量：2.3万</span>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&q=80" alt="歌曲封面">
+                        <div class="song-info">
+                            <h3>光年之外</h3>
+                            <p>邓紫棋</p>
+                            <span class="plays">播放量：1.8万</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 播放列表区域 -->
+            <section class="featured-playlists">
+                <h2>TUNES TO WARM UP THE COLDEST DAYS</h2>
+                <p class="theme">Winter ❄️</p>
+                <div class="playlist-grid">
+                    <div class="playlist-card">
+                        <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=300&q=80" alt="播放列表封面">
+                        <h3>Winter J-Pop</h3>
+                        <p>日本冬季音乐精选</p>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="https://images.unsplash.com/photo-1542728928-0011f81446e5?w=300&q=80" alt="播放列表封面">
+                        <h3>Winter Korean Music</h3>
+                        <p>韩国冬季音乐精选</p>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="https://images.unsplash.com/photo-1445985543470-41fba5c3144a?w=300&q=80" alt="播放列表封面">
+                        <h3>Winter Chill</h3>
+                        <p>轻音乐精选</p>
+                    </div>
+                    <div class="playlist-card">
+                        <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=300&q=80" alt="播放列表封面">
+                        <h3>Winter Classical</h3>
+                        <p>冬日古典音乐</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
